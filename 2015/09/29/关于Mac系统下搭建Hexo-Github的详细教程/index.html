@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://doublefun.github.io/2015/09/29/关于Mac系统下搭建Hexo-Github的详细教程/index.html">
 <meta property="og:site_name" content="DoubleFun's blog">
 <meta property="og:description" content="AAAAAAAAAAAAAA">
-<meta property="og:updated_time" content="2015-09-29T06:52:23.000Z">
+<meta property="og:updated_time" content="2015-09-29T07:51:32.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于Mac系统下搭建Hexo+Github的详细教程">
 <meta name="twitter:description" content="AAAAAAAAAAAAAA">
@@ -226,20 +226,22 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>###前言</p>
-<blockquote>
+        <h3 id="前言">前言</h3><blockquote>
 <p>最近突然有个想法：想搭建自己的Blog，记录在工作或学习过程中的一些点滴；于是乎各种百度 or Google,最终决定使用Hexo+Github的方式来搭建和部署自己的博客网站。(注意：此教程基于Mac系统, Linux/Windows 用户仅供部分参考,可以自己去百度搜索!)</p>
 </blockquote>
-<p>###本来是不打算写这篇文章的，后来仔细想了下：鉴于目前网上从头到尾讲述的比较详细和全面的相关介绍文章好像还真没有；然后就还是花了点时间整理了下这篇文章，但愿对其他的有意搭建博客的网友有帮助吧～Let’s go!<br><a id="more"></a></p>
-<h3 id="一:_本篇文章的主要几个步骤:">一: 本篇文章的主要几个步骤:</h3><h4 id="1-_Mac环境下基于brew,安装Git;">1. Mac环境下基于brew,安装Git;</h4><h4 id="2-_安装Node-js;">2. 安装Node.js;</h4><h4 id="3-_安装Hexo和设置;">3. 安装Hexo和设置;</h4><h4 id="4-_部署到github">4. 部署到github</h4><h4 id="5-_Hexo常用插件安装与配置">5. Hexo常用插件安装与配置</h4><h4 id="6-_开始写自己的第一篇blog">6. 开始写自己的第一篇blog</h4><h4 id="7-_更多">7. 更多</h4><p>###二.开始安装: step by step (以下相关的命令都是在mac命令行Terminal下执行)</p>
-<p>####1.Git安装<br>    brew install git   #比较简单 一行命令搞定</p>
-<p>####2.安装Node.js (相关介绍：<a href="https://github.com/creationix/nvm#node-version-manager" target="_blank" rel="external">https://github.com/creationix/nvm#node-version-manager</a> 我在安装过程中使用了vpn还是蛮快的，安装过程中如果出错,请参考以上链接.)<br>    brew install node  # 最新版的node.js的包中已经集成了npm包管理工具<br>    使用以下命令验证是否安装成功<br>    node -v<br>    npm -v<br>    比如我的终端上显示:<br>    JerryS-Air:_posts just$ node -v<br>    v0.12.7<br>    JerryS-Air:_posts just$ npm -v<br>    2.14.2</p>
-<p>####3.Hexo安装与设置</p>
-<p>#####在介绍安装之前，我们先简单了解下hexo;</p>
-<p>######1.<a href="http://wiki.jikexueyuan.com/project/hexo-document/themes.html" target="_blank" rel="external">关于Hexo 中文版</a> </p>
-<p>######2. <a href="http://zipperary.com/categories/hexo/" target="_blank" rel="external">hexo系列教程(一)～(五)</a>    </p>
-<p>######3. 简单了解后,我们开始继续安装:  Node, npm和Git都安装成功后, 开始安装hexo<br>    npm install hexo -g     #-g表示全局安装</p>
-<p>到此基本上安装完毕，下面开始设置相关的配置。配置前首先需要在本地创建你的博客对应的文件夹，比如我自己是在桌面创建的DoubleFun_HexoBlog.然后通过下面的几个命令完成初始化操作.</p><br>    cd DoubleFun_HexoBlog/        # 进入到创建的目录文件夹<br>    ls DoubleFun_HexoBlog/        # 查看目录下的内容;此时由于还没有初始化,目录为空<br>    hexo init                    # 初始化目录<br>    npm install                    # 初始化依赖<br><p>    然后查看生成的目录结构如下:</p>
+<h3 id="本来是不打算写这篇文章的，后来仔细想了下：鉴于目前网上从头到尾讲述的比较详细和全面的相关介绍文章好像还真没有；然后就还是花了点时间整理了下这篇文章，但愿对其他的有意搭建博客的网友有帮助吧～Let’s_go!">本来是不打算写这篇文章的，后来仔细想了下：鉴于目前网上从头到尾讲述的比较详细和全面的相关介绍文章好像还真没有；然后就还是花了点时间整理了下这篇文章，但愿对其他的有意搭建博客的网友有帮助吧～Let’s go!</h3><a id="more"></a>
+<h3 id="一:_本篇文章的主要几个步骤:">一: 本篇文章的主要几个步骤:</h3><h4 id="1-_Mac环境下基于brew,安装Git;">1. Mac环境下基于brew,安装Git;</h4><h4 id="2-_安装Node-js;">2. 安装Node.js;</h4><h4 id="3-_安装Hexo和设置;">3. 安装Hexo和设置;</h4><h4 id="4-_部署到github">4. 部署到github</h4><h4 id="5-_Hexo常用插件安装与配置">5. Hexo常用插件安装与配置</h4><h4 id="6-_开始写自己的第一篇blog">6. 开始写自己的第一篇blog</h4><h4 id="7-_更多">7. 更多</h4><h3 id="二-开始安装:_Step_by_step_(以下相关的命令都是在mac命令行Terminal下执行)">二.开始安装: Step by step (以下相关的命令都是在mac命令行Terminal下执行)</h3><h4 id="1-Git安装">1.Git安装</h4><pre><code>brew <span class="keyword">install</span> git   <span class="comment">#比较简单 一行命令搞定</span>
+</code></pre><h4 id="2-安装Node-js_(相关介绍：https://github-com/creationix/nvm#node-version-manager_我在安装过程中使用了vpn还是蛮快的，安装过程中如果出错,请参考以上链接-)">2.安装Node.js (相关介绍：<a href="https://github.com/creationix/nvm#node-version-manager" target="_blank" rel="external">https://github.com/creationix/nvm#node-version-manager</a> 我在安装过程中使用了vpn还是蛮快的，安装过程中如果出错,请参考以上链接.)</h4><pre><code>brew install node  <span class="preprocessor"># 最新版的node.js的包中已经集成了npm包管理工具</span>
+ 使用以下命令验证是否安装成功
+node -v
+npm -v
+ 比如我的终端上显示: 
+JerryS-Air:_posts just$ node -v
+v0<span class="number">.12</span><span class="number">.7</span>
+JerryS-Air:_posts just$ npm -v
+<span class="number">2.14</span><span class="number">.2</span>
+</code></pre><h4 id="3-Hexo安装与设置">3.Hexo安装与设置</h4><h5 id="在介绍安装之前，我们先简单了解下hexo;">在介绍安装之前，我们先简单了解下hexo;</h5><h6 id="(1)-关于Hexo_中文版">(1).<a href="http://wiki.jikexueyuan.com/project/hexo-document/themes.html" target="_blank" rel="external">关于Hexo 中文版</a></h6><h6 id="(2)-_hexo系列教程(一)～(五)">(2). <a href="http://zipperary.com/categories/hexo/" target="_blank" rel="external">hexo系列教程(一)～(五)</a></h6><h6 id="(3)-_简单了解后,我们开始继续安装:_Node,_npm和Git都安装成功后,_开始安装hexo">(3). 简单了解后,我们开始继续安装:  Node, npm和Git都安装成功后, 开始安装hexo</h6><pre><code>npm <span class="operator"><span class="keyword">install</span> hexo -<span class="keyword">g</span>     #-<span class="keyword">g</span>表示全局安装</span>
+</code></pre><p> 到此基本上安装完毕，下面开始设置相关的配置。配置前首先需要在本地创建你的博客对应的文件夹，比如我自己是在桌面创建的DoubleFun_HexoBlog.然后通过下面的几个命令完成初始化操作.</p><br>    cd DoubleFun_HexoBlog/        # 进入到创建的目录文件夹<br>    ls DoubleFun_HexoBlog/        # 查看目录下的内容;此时由于还没有初始化,目录为空<br>    hexo init                    # 初始化目录<br>    npm install                    # 初始化依赖<br><p>    然后查看生成的目录结构如下:</p>
 
 <pre><code>├── _config.yml
 ├── package.json
@@ -249,10 +251,10 @@
 <span class="string">|   ├── _drafts</span>
 <span class="string">|   └── _posts</span>
 └── themes
-</code></pre><p></p><p>生成静态文件以及启动本地服务</p><br>    hexo generate        #   生成静态文件<br>    hexo server           #   启动本地服务器<p></p>
-<h2 id="然后在你的浏览器中输入http://localhost:4000或者http://0-0-0-0:4000/_就可以访问刚刚搭建的最原始的博客了-"><p>然后在你的浏览器中输入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>或者<a href="http://0.0.0.0:4000/" target="_blank" rel="external">http://0.0.0.0:4000/</a> 就可以访问刚刚搭建的最原始的博客了.</p></h2><h4 id="4-_部署hexo到github">4. 部署hexo到github</h4><p>#####以上内容都是在本地进行查看, 现在将博客部署到github上,有以下几个小步骤</p>
-<h5 id="(1)_在自己的github账号中创建Repository（没有账号请赶紧创建去吧～）;">(1) 在自己的github账号中创建Repository（没有账号请赶紧创建去吧～）;</h5><p>   Repository name需要符合username.github.io的命名规则。比如我的Github账号是DoubleFun，我就创建名为depthlove.github.io 的仓库;然后访问我仓库的全名称地址是:<a href="https://github.com/DoubleFun/doubleFun.github.io" target="_blank" rel="external">https://github.com/DoubleFun/doubleFun.github.io</a></p>
-<h5 id="(2)_修改_config-yml文件">(2) 修改_config.yml文件</h5><p></p><p>在终端上执行命令</p><br>    vim _config.yml<p></p>
+</code></pre><p>生成静态文件以及启动本地服务</p><br>    hexo generate        #   生成静态文件<br>    hexo server           #   启动本地服务器<br><p>然后在你的浏览器中输入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>或者<a href="http://0.0.0.0:4000/" target="_blank" rel="external">http://0.0.0.0:4000/</a> 就可以访问刚刚搭建的最原始的博客了.</p>
+
+<h4 id="4-_部署hexo到github">4. 部署hexo到github</h4><h5 id="以上内容都是在本地进行查看,_现在将博客部署到github上,有以下几个小步骤">以上内容都是在本地进行查看, 现在将博客部署到github上,有以下几个小步骤</h5><h5 id="(1)_在自己的github账号中创建Repository（没有账号请赶紧创建去吧～）;">(1) 在自己的github账号中创建Repository（没有账号请赶紧创建去吧～）;</h5><p>   Repository name需要符合username.github.io的命名规则。比如我的Github账号是DoubleFun，我就创建名为depthlove.github.io 的仓库;然后访问我仓库的全名称地址是:<a href="https://github.com/DoubleFun/doubleFun.github.io" target="_blank" rel="external">https://github.com/DoubleFun/doubleFun.github.io</a></p>
+<h5 id="(2)_修改_config-yml文件">(2) 修改_config.yml文件</h5><p>在终端上执行命令<br>    vim _config.yml</p>
 <p></p><p>找到</p><br>    deploy:<br>          type:<p></p>
 <p></p><p>修改为：</p><br>    deploy:<br>        type: git<br>         repo: <a href="https://github.com/DoubleFun/doubleFun.github.io.git" target="_blank" rel="external">https://github.com/DoubleFun/doubleFun.github.io.git</a><br>          branch: master<br>保存退出<p></p>
 <h5 id="(3)设置SSH_keys">(3)设置SSH keys</h5><p>查看是否已经有SSH keys，如果之前在该电脑上使用过git管理过代码，结果是~/.ssh中会存在 id_rsa id_rsa.pub known_hosts 三个文件<br>在终端执行命令:</p>
@@ -339,10 +341,7 @@ hexo <span class="keyword">g</span>
 hexo <span class="literal">d</span>
 </code></pre><p>那么静态化 + 部署就可以写成</p>
 <pre><code>hexo <span class="keyword">d</span> -<span class="keyword">g</span>
-</code></pre><h4 id="5-_Hexo常用插件安装与配置-1">5. Hexo常用插件安装与配置</h4><p>######安装首页文章数量 存档 分类 的插件</p>
-<p>######安装本地服务器代理插件</p>
-<p>######安装发布器插件</p>
-<p>######安装更新插件 rss site-map之类的<br>在终端下依次执行如下命令:</p>
+</code></pre><h4 id="5-_Hexo常用插件安装与配置-1">5. Hexo常用插件安装与配置</h4><h6 id="安装首页文章数量_存档_分类_的插件">安装首页文章数量 存档 分类 的插件</h6><h6 id="安装本地服务器代理插件">安装本地服务器代理插件</h6><h6 id="安装发布器插件">安装发布器插件</h6><h6 id="安装更新插件_rss_site-map之类的">安装更新插件 rss site-map之类的</h6><p>在终端下依次执行如下命令:</p>
 <pre><code>npm <span class="operator"><span class="keyword">install</span> hexo-generator-<span class="keyword">index</span> <span class="comment">--save</span>
 npm <span class="keyword">install</span> hexo-generator-<span class="keyword">archive</span> <span class="comment">--save</span>
 npm <span class="keyword">install</span> hexo-generator-<span class="keyword">category</span> <span class="comment">--save</span>
@@ -356,8 +355,10 @@ npm <span class="keyword">install</span> hexo-renderer-marked@<span class="numbe
 npm <span class="keyword">install</span> hexo-renderer-stylus@<span class="number">0.2</span><span class="number">.3</span> <span class="comment">--save</span>
 npm <span class="keyword">install</span> hexo-generator-feed@<span class="number">1.0</span><span class="number">.2</span> <span class="comment">--save</span>
 npm <span class="keyword">install</span> hexo-generator-sitemap@<span class="number">1.0</span><span class="number">.1</span> <span class="comment">--save</span></span>
-</code></pre><p>######装完之后去全局配置文件 _config.yml 修改参数<br>    index_generator:<br>          per_page: 10 ##首页默认10篇文章标题 如果值为0不分页</p>
-<pre><code>archive_generator:
+</code></pre><h6 id="装完之后去全局配置文件__config-yml_修改参数">装完之后去全局配置文件 _config.yml 修改参数</h6><pre><code>index_generator:
+      per_page: <span class="number">10</span> ##首页默认<span class="number">10</span>篇文章标题 如果值为<span class="number">0</span>不分页
+
+archive_generator:
       per_page: <span class="number">10</span> ##归档页面默认<span class="number">10</span>篇文章标题
       yearly: true  ##生成年视图
       monthly: true ##生成月视图
@@ -386,8 +387,9 @@ deploy:
 </code></pre><p>更新</p>
 <pre><code><span class="built_in">cd</span> themes/yilia
 git pull
-</code></pre><p>######网上有很多hexo的主题,请根据个人的爱好风格来选择适合自己的一款主题.(可以尝试下next主题: git clone <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">https://github.com/iissnan/hexo-theme-next</a> themes/next)</p>
-<h4 id="6-_开始写自己的第一篇blog-1">6. 开始写自己的第一篇blog</h4><p>######First Blog<br>    cd ~/Desktop/DoubleFun_HexoBlog<br>    hexo new firstblog<br>~/Desktop/DoubleFun_HexoBlog/source/_posts 下生成 firstblog.md 文件<br>编辑 firstblog.md</p>
+</code></pre><h6 id="网上有很多hexo的主题,请根据个人的爱好风格来选择适合自己的一款主题-(可以尝试下next主题:_git_clone_https://github-com/iissnan/hexo-theme-next_themes/next)">网上有很多hexo的主题,请根据个人的爱好风格来选择适合自己的一款主题.(可以尝试下next主题: git clone <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">https://github.com/iissnan/hexo-theme-next</a> themes/next)</h6><h4 id="6-_开始写自己的第一篇blog-1">6. 开始写自己的第一篇blog</h4><h6 id="First_Blog">First Blog</h6><pre><code><span class="built_in">cd</span> ~/Desktop/DoubleFun_HexoB<span class="built_in">log</span>
+hexo new firstblog
+</code></pre><p>~/Desktop/DoubleFun_HexoBlog/source/_posts 下生成 firstblog.md 文件<br>编辑 firstblog.md</p>
 <pre><code>title: 在GitHub上搭建基于Hexo的静态Blog   <span class="preprocessor"># 文章题目</span>
 date: <span class="number">2015</span>-<span class="number">09</span>-<span class="number">28</span> <span class="number">16</span>:<span class="number">30</span>:<span class="number">44</span>                 <span class="preprocessor">#文章生成时间</span>
 categories:                                <span class="preprocessor">#文章分类目录 可以省略</span>
@@ -408,33 +410,21 @@ description:                             <span class="preprocessor">#你对本�
 </code></pre><p>想在首页文章预览添加图片可以添加photo参数 这个fancybox可以省略 如下:</p>
 <pre><code><span class="string">photos:</span>
       - <span class="string">http:</span><span class="comment">//<span class="label">xxx.com/photo.jpg</span></span>
-</code></pre><p>######正文中可以使用&lt; !–more–&gt;设置文章摘要 如下:</p>
-<pre><code>以上是文章摘要
+</code></pre><h6 id="正文中可以使用&lt;_!–more–&gt;设置文章摘要_如下:">正文中可以使用&lt; !–more–&gt;设置文章摘要 如下:</h6><pre><code>以上是文章摘要
 <span class="comment">&lt;!--more--&gt;</span>
 以下是余下全文
 </code></pre><p>more以上内容即是文章摘要，在主页显示，more以下内容点击『&gt; Read More』链接打开全文才显示。。</p>
-<h4 id="7-更多">7.更多</h4><p>######Hexo中支持Markdown语法,我们在后期写博客过程中需要慢慢熟悉Markdown的相关语法<br>(1) Markdown 语法说明 (简体中文版) <a href="http://www.appinn.com/markdown/" target="_blank" rel="external">http://www.appinn.com/markdown/</a><br>(2) Markdown——入门指南 <a href="http://www.jianshu.com/p/1e402922ee32/" target="_blank" rel="external">http://www.jianshu.com/p/1e402922ee32/</a></p>
-<p>######本文参考链接:<br>在GitHub上搭建基于Hexo的静态Blog <a href="http://www.jianshu.com/p/ad365a593eec" target="_blank" rel="external">http://www.jianshu.com/p/ad365a593eec</a></p>
+<h4 id="7-更多">7.更多</h4><h6 id="Hexo中支持Markdown语法,我们在后期写博客过程中需要慢慢熟悉Markdown的相关语法">Hexo中支持Markdown语法,我们在后期写博客过程中需要慢慢熟悉Markdown的相关语法</h6><p>(1) Markdown 语法说明 (简体中文版) <a href="http://www.appinn.com/markdown/" target="_blank" rel="external">http://www.appinn.com/markdown/</a><br>(2) Markdown——入门指南 <a href="http://www.jianshu.com/p/1e402922ee32/" target="_blank" rel="external">http://www.jianshu.com/p/1e402922ee32/</a></p>
+<h6 id="本文参考链接:">本文参考链接:</h6><p>在GitHub上搭建基于Hexo的静态Blog <a href="http://www.jianshu.com/p/ad365a593eec" target="_blank" rel="external">http://www.jianshu.com/p/ad365a593eec</a></p>
 <p>Hexo 静态博客使用指南<a href="http://www.jianshu.com/p/73779eacb494" target="_blank" rel="external">http://www.jianshu.com/p/73779eacb494</a></p>
 <p>通过Hexo在Github上搭建博客教程 <a href="http://www.jianshu.com/p/858ecf233db9" target="_blank" rel="external">http://www.jianshu.com/p/858ecf233db9</a></p>
-<p>#####本文中所讲内容如有错误之处，烦请各位及时指出或给我留言，谢谢！！！</p>
-
+<h5 id="本文中所讲内容如有错误之处，烦请各位及时指出或给我留言，谢谢！！！">本文中所讲内容如有错误之处，烦请各位及时指出或给我留言，谢谢！！！</h5>
       
     </div>
     
   </div>
   
     
-<nav id="article-nav">
-  
-  
-    <a href="/2015/09/29/细说Mac系统下搭建Hexo-Github/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">细说Mac系统下搭建Hexo-Github</div>
-      <strong class="article-nav-caption">></strong>
-    </a>
-  
-</nav>
-
   
 </article>
 
